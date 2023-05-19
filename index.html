@@ -4,103 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Localify</title>
 </head>
 <body>
-    
-    <div class="l-site-header">
-        <div class="l-site-header__inner">
-
-            <nav class="nav js-nav " data-module="nav">
-
-                <div class="nav__logo">
-                    <a href="https://www.rubycompany.com/">
-                        <!-- For company logo -->
-                           </a>
-                </div>
-
-                <div class="nav__open js-nav-toggle"><span></span></div>
-
-                <div class="nav__right">
-
-                    <ul class="nav__links">
-
-
-                        <li class="nav__link" data-section="company">
-                            <a href="https://www.rubycompany.com/company/about" class="js-nav-top-link">Home</a>
-
-                        </li>
-
-                        <li class="nav__link" data-section="what-we-do">
-                            <a href="https://www.rubycompany.com/services/expertise" class="js-nav-top-link">Search</a>
-                        </li>
-
-                        <li class="nav__link" data-section="products">
-                            <a href="/our-produce" class="js-nav-top-link">Add</a>
-                        </li>
-
-                        <li class="nav__link" data-section="contact">
-                            <a href="/contact" class="no-barba">About Us</a>
-
-                            <ul class="nav__subnav js-nav-top-subnav">
-                                <li class="nav__subnav-item js-nav-top-subnav-link "><a href="/our-produce">Meet our Team</a></li>
-                                <li class="nav__subnav-item js-nav-top-subnav-link "><a href="/our-produce/food-safety">Contact Us</a></li>                            
-                            </ul>
-
-                        </li>
-
-                    </ul>
-                </div>
-
-            </nav>
-
-        </div>
-    </div>
-
-
-    <nav class="mobile-nav js-mobile-nav">
-
-        <div class="mobile-nav__close js-nav-toggle"></div>
-
-        <ul class="mobile-nav__links">
-
-
-            <li class="mobile-nav__link">
-
-                <span class="mobile-nav__subnav-toggle js-mobile-nav-subnav-toggle">Home</span>
-
+  <!-- //............Creating Navbar...........//   -->
+  
+<nav class="bg-blue-700 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-4 p-4 ">
+        <div class="flex">      
+              <svg class="hello" height="65" width="85" >
+            <circle class="first" r="16.9" cx="32.5" cy="32.5" fill="none" stroke="#7b8b99" stroke-width="3.9px" />
+            <circle r="18.2" cx="55.9" cy="32.5" fill="none" stroke="rgb(29 78 216 / var(--tw-bg-opacity))" stroke-width="6.5px" />
+            <circle class="second" r="16.9" cx="53.82" cy="32.5" fill="none" stroke="black" stroke-width="3.9px" />
+        </svg>
+        <span class="self-center text-3xl font-semibold whitespace-nowrap">Localify</span>
+</div>
+    <div>
+        <ul class="flex items-center space-x-3 justify-end">
+            <li class="text-white font-bold hover:text-black p-2" >Home</li>
+            <li class="text-white font-bold hover:text-black p-2" >Search</li>
+            <li class="text-white font-bold hover:text-black p-2">Add</li>
+            <li class="text-white font-bold hover:text-black">
+                <div class="dropdown">
+                    <button class="dropbtn">About Us
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content bg-blue-700 border-1 border-black">
+                      <a href="#" class="text-white hover:text-black">Meet Our Team</a>
+                      <hr>
+                      <a href="#" class="text-white hover:text-black">Contact Us</a>
+                    </div>
+                  </div>
             </li>
-
-            <li class="mobile-nav__link">
-
-                <span class="mobile-nav__subnav-toggle js-mobile-nav-subnav-toggle">Search</span>
-
-            </li>
-
-            <li class="mobile-nav__link">
-
-                <span class="mobile-nav__subnav-toggle js-mobile-nav-subnav-toggle">Add</span>
-
-            </li>
-
-            <li class="mobile-nav__link">
-
-                <a href="/contact" class="no-barba">About Us</a>
-                <ul class="mobile-nav__subnav js-mobile-nav-subnav">
-                    <li class="mobile-nav__subnav-item "><a href="/our-produce">Meet our Team</a></li>
-                    <li class="mobile-nav__subnav-item "><a href="/our-produce/food-safety">Contact Us</a></li>
-                </ul>
-            </li>
-
+            <li><button class="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-3xl  hover:border-black hover:border-2">
+                Get Started
+              </button></li>
+              <li><button class="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-3xl  hover:border-black hover:border-2">
+                Log in
+              </button></li>
         </ul>
-    </nav>
-     <!-- nav over here......... -->
-
-    <!-- first div..... -->
-
-   <!-- second div -->
-   
+    </div>
+    </div>
+  </nav>
+  
 
 </body>
 </html>
