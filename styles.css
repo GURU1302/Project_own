@@ -52,7 +52,6 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
     padding: 14px 12px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -82,3 +81,35 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+  /* animation for navbar */
+
+.navdes{
+    transition: transform 0.2s;
+}
+
+
+
+  .nav__hidden{
+    transform: translateY(-6rem);
+  }
+
+  /* for scroll to top button */
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */ 
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border-radius: 50%;
+  }
+  
