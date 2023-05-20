@@ -112,4 +112,30 @@
     font-size: 18px; /* Increase font size */
     border-radius: 50%;
   }
+
+    /* styling of animation of text */
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+  }
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  /* styling of animation of images */
+  
+  .image{
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+  .image.active{
+    transform: translateX(0px);  
+    opacity: 1;
+  }
   
