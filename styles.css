@@ -138,4 +138,9 @@
     transform: translateX(0px);  
     opacity: 1;
   }
+
+  /* ------------for styling placeholder-------------- */
   
+  .shopinfo > ::placeholder{
+    color:black;
+  }

@@ -1,3 +1,4 @@
+
 // for displaying the navbar and hiding while scroll
 const nav = document.querySelector("nav");
 
